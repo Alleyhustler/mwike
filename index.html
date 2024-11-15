@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Background with Footer Bar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Kalnia+Glaze:wght@100..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <style>
+        /* Full-page background image */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('pad.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Jersey 20', sans-serif;
+            color: white;
+        }
+
+        /* Footer bar */
+        .footer-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Space between items */
+        }
+
+        .footer-bar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Kalnia Glaze', sans-serif; /* Font for links */
+            transition: color 0.3s ease;
+        }
+
+        .footer-bar a:hover {
+            color: #1da1f2; /* Highlight color for links */
+        }
+
+        .footer-bar .contract {
+            color: #ccc; /* Slightly lighter color for the contract address */
+            font-family: 'Shadows Into Light', cursive; /* Font for the contract address */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Footer Bar -->
+    <div class="footer-bar">
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+        <a href="https://t.me/yourgroup" target="_blank">Telegram</a>
+        <span class="contract">Contract Address: HERE</span>
+    </div>
+
+</body>
+</html>
